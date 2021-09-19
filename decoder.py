@@ -1,5 +1,4 @@
-sample = '00011111100101110110011011111010010'
-
+sample = '10010001001111100110010000010100001'
 
 def binaryToDecimal(binary):
      
@@ -13,8 +12,6 @@ def binaryToDecimal(binary):
     return decimal
 
 
-
-devidedsample = '1010011'
 def BinToDecimal(devidedsample):
     devidedsample_dec = int(devidedsample,2)
     decode = chr(devidedsample_dec)
@@ -23,6 +20,17 @@ def BinToDecimal(devidedsample):
 # hacer un main que elvalúe el archivo de entrada, divida en grupos de 7 y
 # evalue en la función de bintodecimal, luego guarde el decodificado en una archivo nuevo.
 
+contador = 0
+devidedsample = ''
+decodesample = ''
+for i in sample:
+    devidedsample += i
+    contador += 1
+    if(contador == 7):
+        decodesample += BinToDecimal(devidedsample)
+        contador = 0
+        devidedsample = ''
+        print(decodesample)
 
 
 
