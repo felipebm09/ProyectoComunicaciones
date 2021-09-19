@@ -1,17 +1,5 @@
 sample = '10010001001111100110010000010100001'
 
-def binaryToDecimal(binary):
-     
-    binary1 = binary
-    decimal, i, n = 0, 0, 0
-    while(binary != 0):
-        dec = binary % 10
-        decimal = decimal + dec * pow(2, i)
-        binary = binary//10
-        i += 1
-    return decimal
-
-
 def BinToDecimal(devidedsample):
     devidedsample_dec = int(devidedsample,2)
     decode = chr(devidedsample_dec)
